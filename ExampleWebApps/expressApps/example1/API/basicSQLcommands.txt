@@ -1,0 +1,2 @@
+INSERT INTO <table> (value1, value2,...,valueN) VALUES ('strVal1', 'strVal2', ..., 'strValN') RETURNING *
+CREATE TABLE <table name>

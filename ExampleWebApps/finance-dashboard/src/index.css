@@ -1,0 +1,102 @@
+/* index.css */
+:root {
+    /* Base Theme */
+    --color-background: #c9e8f6;     /* soft light blue */
+    --color-background-container: #f3f0ee; /* muted gray-blue */
+    --color-surface: #f1f1f1;        /* white cards */
+    --color-white: #ffffff;          /* pure white */
+    --color-text: #2b2b2b;           /* default text */
+  
+    /* Wells Fargo Inspired Accents */
+    --color-primary: #9c70b7;  
+    --color-secondary: #d32828;      /* lavender-purple */
+    --color-accent-red: #e04e39;     /* classic bright red */
+    --color-accent-warm: #f5b942;    /* warm gold highlight */
+    --color-accent-brown: #4b2e2e;   /* grounded deep brown */
+  
+    /* UI States */
+    --color-danger: #c62828;
+    --color-muted: #999999;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.shell-main {
+    background: var(--color-background);
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+/* Variants */
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.btn-tertiary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.btn-danger {
+  background: var(--color-danger);
+  color: white;
+}
+
+/* Nice UX polish */
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+a.link--primary {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a.link--secondary {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a.link--tertiary {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid var(--color-primary);
+}
+
+a.link--danger {
+    color: var(--color-danger);
+    text-decoration: none;
+    font-weight: 600;
+}
+a.link--nav {
+    color: var(--color-surface);
+    text-decoration: none;
+    font-weight: 700;
+}
